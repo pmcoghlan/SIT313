@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: white;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+            nav ul li a {
+                display: block;
+                color: cornflowerblue;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav ul li a:hover {
+                    background-color: #f0f0f0;
+                }
+
+.header-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('headerimage.jpg') no-repeat center center/cover;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .hover-text::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+
+.header-image:hover .hover-text {
+    display: block;
+}
+
+#about {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 200px;
+}
+
+.job-description {
+    font-size: 18px;
+    margin-top: 10px;
+    color: cornflowerblue;
+}
+
+#work {
+    padding: 20px;
+    text-align: center; 
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+#gallery {
+    padding: 20px;
+    text-align: center; 
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+}
+
+    .gallery img {
+        flex: 1 1 calc(33.333% - 10px);
+        width: 100%;
+        height: 100%;
+    }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
